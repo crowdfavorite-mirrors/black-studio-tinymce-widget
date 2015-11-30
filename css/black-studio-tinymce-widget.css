@@ -79,9 +79,10 @@ div[id*="black-studio-tinymce"] .wp-editor-wrap {
 }
 
 
-/* Put TinyMCE floating panel foreground */
+/* Put TinyMCE panels foreground in Customizer */
 
-.wp-customizer .mce-floatpanel.mce-popover {
+.wp-customizer .mce-floatpanel.mce-popover,
+.wp-customizer .mce-panel.mce-menu {
 	z-index: 500000 !important;
 }
 
@@ -112,6 +113,17 @@ div[id*="black-studio-tinymce"] .mce-wp-fullscreen {
 .media-modal {
 	z-index: 1000100 !important;
 }
+
+/* Fix z-index for link dialog windows (used on recent WP versions) */
+
+.wp-customizer #wp-link-backdrop {
+	z-index: 500010;
+}
+
+.wp-customizer #wp-link-wrap {
+	z-index: 500020;
+}
+
 
 
 /* Change mouse cursor when waiting */
